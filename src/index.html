@@ -1,0 +1,106 @@
+---
+layout: page
+
+topics:
+    - title: Introduction
+      items:
+          - id: drawing-with-turtle
+            title: Drawing with Turtle
+            description: Create your own spirograph in Wipple.
+            duration: 1 hour
+            materials: Spirograph
+            standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
+---
+
+<a href="https://wipple.org">
+    <img
+        src="https://www.wipple.org/images/logo.svg"
+        alt="Wipple logo"
+        class="block w-16 h-16 mt-8 mb-8"
+    />
+</a>
+
+<h1 class="text-4xl font-semibold mt-4 mb-2">Teach Wipple</h1>
+
+<p class="text-xl text-gray-700">
+    Resources for computer science teachers aligning with
+    <a
+        class="text-blue-500"
+        href="https://www.doe.mass.edu/frameworks/dlcs.pdf"
+    >
+        Massachusetts DLCS Standards.
+    </a>
+</p>
+
+{% for topic in topics %}
+<h2 class="text-2xl font-semibold mt-8 mb-2">{{ topic.title }}</h2>
+
+<ul class="list-disc list-inside">
+    {% for item in topic.items %}
+    <li class="indent-4">
+        <div class="inline-block align-top">
+            <p>
+                <strong class="font-semibold text-gray-700">
+                    {{ item.title }}
+                </strong>
+
+                {% if item.description %}
+                <span class="text-gray-500">— {{ item.description }}</span>
+                {% endif %}
+            </p>
+
+            <!-- -->
+
+            {% if item.duration %}
+            <p class="text-gray-500">
+                <strong class="font-semibold text-gray-700">Duration:</strong>
+                {{ item.duration }}
+            </p>
+            {% endif %}
+
+            <!-- -->
+
+            {% if item.materials %}
+            <p class="text-gray-500">
+                <strong class="font-semibold text-gray-700">
+                    Required Materials:
+                </strong>
+                {{ item.materials }}
+            </p>
+            {% endif %}
+
+            <!-- -->
+
+            {% if item.standards %}
+            <p class="text-gray-500">
+                <strong class="font-semibold text-gray-700">
+                    MA DLCS Standards:
+                </strong>
+                {{ item.standards }}
+            </p>
+            {% endif %}
+
+            <!-- -->
+
+            <p class="text-gray-500">
+                <a
+                    class="text-blue-500"
+                    href="/resources/{{ item.id }}/lesson.pdf"
+                >
+                    Lesson Plan
+                </a>
+
+                •
+
+                <a
+                    class="text-blue-500"
+                    href="/resources/{{ item.id }}/slideshow.pdf"
+                >
+                    Slideshow
+                </a>
+            </p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}

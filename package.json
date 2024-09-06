@@ -5,9 +5,11 @@
         "dev": "npm-run-all -p dev:*",
         "build": "run-s build:*",
         "dev:11ty": "eleventy --serve",
-        "dev:css": "tailwindcss -i src/styles/index.css -o _site/styles/index.css --watch --postcss",
+        "dev:index.css": "tailwindcss -i src/styles/index.css -o _site/styles/index.css --watch --postcss",
+        "dev:slideshow.css": "tailwindcss -i src/styles/slideshow.css -o _site/styles/slideshow.css --watch --postcss",
         "build:11ty": "eleventy",
-        "build:css": "tailwindcss -i src/styles/index.css -o _site/styles/index.css --postcss"
+        "build:index.css": "tailwindcss -i src/styles/index.css -o _site/styles/index.css --postcss",
+        "build:slideshow.css": "tailwindcss -i src/styles/slideshow.css -o _site/styles/slideshow.css --postcss"
     },
     "devDependencies": {
         "@11ty/eleventy": "^2.0.1",

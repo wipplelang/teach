@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Inter, sans-serif;
+    font-size: 24pt;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 48pt;
+    margin-bottom: 0.25in;
+}
+
+h2 {
+    font-size: 36pt;
+    margin-bottom: 0.25in;
+}
+
+h3 {
+    font-size: 18pt;
+    margin-bottom: 0.125in;
+}
+
+pre,
+code {
+    font-family: "JetBrains Mono", monospace;
+}
+
+li {
+    @apply ml-[0.2in] mt-[0.5lh] list-outside list-disc;
+}
+
+small {
+    @apply text-gray-500;
+    font-size: 12pt;
+}
+
+footer {
+    @apply absolute left-[0.5in] bottom-[0.5in] text-gray-500 text-sm;
+}
+
+@media print {
+    @page {
+        size: 10in 8in;
+        margin: 0;
+    }
+
+    body {
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+}
+
+.slide {
+    @apply relative mx-auto my-4 print:my-0 border border-solid print:border-none border-black;
+    width: 10in;
+    height: 8in;
+    padding: 0.5in;
+    page-break-before: always;
+}
+
+.slide .logo {
+    display: block;
+    width: 1in;
+    height: 1in;
+    margin-bottom: 0.25in;
+}
+
+.slide .objectives {
+    @apply flex flex-row w-full items-stretch justify-stretch gap-[0.25in];
+}
+
+.slide .box {
+    @apply flex-1 px-[0.2in] py-[0.15in] border-2 border-gray-700 rounded-md;
+    font-size: 16pt;
+}
+
+i {
+    font-style: normal;
+    vertical-align: middle;
+    font-family: "Material Symbols Rounded";
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.command {
+    @apply inline-block rounded-lg px-1.5 h-[1lh];
+}

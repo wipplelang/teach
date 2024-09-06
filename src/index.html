@@ -1,15 +1,5 @@
 ---
 layout: page
-
-topics:
-    - title: Introduction
-      items:
-          - id: drawing-with-turtle
-            title: Drawing with Turtle
-            description: Create your own spirograph in Wipple.
-            duration: 1 hour
-            materials: Spirograph
-            standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
 ---
 
 <a href="https://wipple.org">
@@ -32,75 +22,46 @@ topics:
     </a>
 </p>
 
-{% for topic in topics %}
-<h2 class="text-2xl font-semibold mt-8 mb-2">{{ topic.title }}</h2>
+{% for item in collections.lesson %}
+<!-- -->
+{% set id = item.page.url.match(r/^\/resources\/(.+)\/lesson/)[1] %}
 
-<ul class="list-disc list-inside">
-    {% for item in topic.items %}
-    <li class="indent-4">
-        <div class="inline-block align-top">
-            <p>
-                <strong class="font-semibold text-gray-700">
-                    {{ item.title }}
-                </strong>
+<div id="{{ id }}" class="w-full mt-4 p-4 bg-gray-50 rounded-lg">
+    <h2 class="font-semibold text-xl">{{ item.data.title }}</h2>
 
-                {% if item.description %}
-                <span class="text-gray-500">— {{ item.description }}</span>
-                {% endif %}
-            </p>
+    <p class="text-gray-500">{{ item.data.description }}</p>
 
-            <!-- -->
+    <div class="h-2.5"></div>
 
-            {% if item.duration %}
-            <p class="text-gray-500">
-                <strong class="font-semibold text-gray-700">Duration:</strong>
-                {{ item.duration }}
-            </p>
-            {% endif %}
+    <p class="text-gray-500">
+        <strong class="font-semibold text-gray-700">Duration:</strong>
+        {{ item.data.duration }}
+    </p>
 
-            <!-- -->
+    <p class="text-gray-500">
+        <strong class="font-semibold text-gray-700">
+            Required Materials:
+        </strong>
+        {{ item.data.materials }}
+    </p>
 
-            {% if item.materials %}
-            <p class="text-gray-500">
-                <strong class="font-semibold text-gray-700">
-                    Required Materials:
-                </strong>
-                {{ item.materials }}
-            </p>
-            {% endif %}
+    <p class="text-gray-500">
+        <strong class="font-semibold text-gray-700">
+            MA DLCS Standards:
+        </strong>
+        {{ item.data.standards }}
+    </p>
 
-            <!-- -->
+    <p class="text-gray-500">
+        <a class="text-blue-500" href="/resources/{{ id }}/lesson">
+            Lesson Plan
+        </a>
 
-            {% if item.standards %}
-            <p class="text-gray-500">
-                <strong class="font-semibold text-gray-700">
-                    MA DLCS Standards:
-                </strong>
-                {{ item.standards }}
-            </p>
-            {% endif %}
+        •
 
-            <!-- -->
-
-            <p class="text-gray-500">
-                <a
-                    class="text-blue-500"
-                    href="/resources/{{ item.id }}/lesson.pdf"
-                >
-                    Lesson Plan
-                </a>
-
-                •
-
-                <a
-                    class="text-blue-500"
-                    href="/resources/{{ item.id }}/slideshow"
-                >
-                    Slideshow
-                </a>
-            </p>
-        </div>
-    </li>
-    {% endfor %}
-</ul>
+        <a class="text-blue-500" href="/resources/{{ id }}/slideshow">
+            Slideshow
+        </a>
+    </p>
+</div>
 {% endfor %}

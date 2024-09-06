@@ -71,3 +71,7 @@ hr {
     width: 0.5in;
     height: 0.5in;
 }
+
+pre {
+    @apply my-4 px-2.5 py-2 border border-black rounded-md;
+}

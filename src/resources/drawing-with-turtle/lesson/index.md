@@ -109,6 +109,6 @@ repeat (4 times) {
     way do you think is better?**
 
     Yes, I could draw my spirograph without `repeat`, because `repeat` is the
-    dragging in the same commands over and over again. I think using `repeat` is
-    better because I only have to change my code once when I want to experiment
-    with new shapes.
+    same as dragging in the commands over and over again. I think using `repeat`
+    is better because I only have to change my code once when I want to
+    experiment with new shapes.

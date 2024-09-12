@@ -29,14 +29,16 @@ tags: lesson
         <h1>{{ title }}</h1>
         <p><strong>{{ description }}</strong></p>
 
-        <br />
-
-        <p><strong>Duration:</strong> {{ duration }}</p>
-        <p><strong>Required Materials:</strong> {{ materials }}</p>
-        <p><strong>MA DLCS Standards:</strong> {{ standards }}</p>
+        <p>
+            <strong>Duration:</strong> {{ duration }}
+            <br />
+            <strong>Required Materials:</strong> {{ materials }}
+            <br />
+            <strong>MA DLCS Standards:</strong> {{ standards }}
+        </p>
 
         <hr />
 
-        {{ content | safe }}
+        {{ content | typogrify | safe }}
     </body>
 </html>

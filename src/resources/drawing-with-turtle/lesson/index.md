@@ -22,15 +22,15 @@ standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
 
 ### Students will be able to...
 
--   Explore and familiarize themselves with the Wipple Playground.
+-   Explore the Wipple Playground's interface and familiarize themselves with
+    its functionality.
 
--   Move the turtle using the `forward`, `backward`, `left`, and `right`
-    commands to draw a simple shape.
+-   Practice using the `forward`, `backward`, `left`, and `right` commands to
+    draw a simple shape.
 
--   Express repetition using the `repeat` command to draw a complex shape.
+-   Construct a complex shape using the `repeat` command.
 
--   Recognize `repeat`'s value as a form of abstraction; without `repeat`, code
-    must be duplicated and changed in multiple places.
+-   Recognize `repeat`'s value as a form of abstraction.
 
 ---
 

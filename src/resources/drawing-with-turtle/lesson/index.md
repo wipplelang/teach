@@ -30,7 +30,7 @@ standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
 
 -   Construct a complex shape using the `repeat` command.
 
--   Recognize `repeat`'s value as a form of abstraction.
+-   Discuss `repeat`'s value as a form of abstraction.
 
 ---
 
@@ -121,8 +121,8 @@ standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
     their tables. When time is up, ask them to save a PDF of what they have
     using the Print button.
 
-5.  **Turn and talk: Abstraction (2 mins)** — Students discuss in their groups
-    why `repeat` was useful for drawing the spirograph.
+5.  **Discuss: Abstraction (2 mins)** — Students discuss in their groups why
+    `repeat` was useful for drawing the spirograph.
 
 6.  **Exit ticket (3 mins)** — Have students upload the PDF of their code and
     answer the questions in the slideshow on their own. You may use a Google

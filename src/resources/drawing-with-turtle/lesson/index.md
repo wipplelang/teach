@@ -2,10 +2,10 @@
 layout: lesson
 title: Drawing with Turtle
 description: >
-    In this introduction to the Wipple Playground, students learn about
-    sequencing and repetition by drawing a spirograph.
+    In this introduction to Wipple, students learn about sequencing and
+    repetition by drawing a spirograph.
 duration: 1 hour
-materials: Laptops, spirograph kits
+materials: Laptops, projector, spirograph kits
 standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
 ---
 
@@ -76,12 +76,12 @@ standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
 ### Lesson plan
 
 1.  **Warm up: Spirograph (10 mins)** — Split class into groups of three (the
-    drawer, the translator, and the writer).
+    artist, the translator, and the writer).
 
-    -   The drawer is responsible for retrieving, using, and putting away the
+    -   The artist is responsible for retrieving, using, and putting away the
         spirograph kit.
 
-    -   The translator is responsible for watching the drawer and translating
+    -   The translator is responsible for watching the artist and translating
         their movements into instructions for the writer.
 
     -   The writer is responsible for writing down the instructions and handing
@@ -128,7 +128,8 @@ standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
     answer the questions in the slideshow on their own. You may use a Google
     Form or other online survey. If a printer is available in the classroom,
     have students line up once they have submitted their exit ticket and print
-    their drawings for them so they can take them home.
+    their drawings for them so they can take them home. As students wait to be
+    picked up, present their drawings on the board.
 
 ---
 
@@ -140,7 +141,7 @@ standards: 6-8.CT.b.1, 9-12.CT.a.1, 9-12.CT.d.5
 
 ---
 
-### Universal support
+### Universal design
 
 -   Explain that commands (code) will always be written in a colored box, and
     that the color of the command is the same in the slides and in the code

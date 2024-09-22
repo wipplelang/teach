@@ -1,5 +1,8 @@
 ---
 layout: page
+lessons:
+    - drawing-with-turtle
+    - music-and-variables
 ---
 
 <a href="https://wipple.org">
@@ -22,10 +25,12 @@ layout: page
     </a>
 </p>
 
+{% for id in lessons %}
+<!-- -->
 {% for item in collections.lesson %}
 <!-- -->
-{% set id = item.page.url.match(r/^\/resources\/(.+)\/lesson/)[1] %}
-
+{% if item.page.url == "/resources/" + id + "/lesson/" %}
+<!-- -->
 <div id="{{ id }}" class="w-full mt-4 p-4 bg-gray-50 rounded-lg">
     <h2 class="font-semibold text-xl">{{ item.data.title }}</h2>
 
@@ -64,4 +69,8 @@ layout: page
         </a>
     </p>
 </div>
+{% endif %}
+<!-- -->
+{% endfor %}
+<!-- -->
 {% endfor %}

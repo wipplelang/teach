@@ -83,7 +83,7 @@ standards: 6-8.CT.b.3, 9-12.CT.a.1
 
     Explain that today, students will be creating their own music in Wipple.
     Discuss whether they think they could use `repeat` to play Twinkle Twinkle
-    Little Star. Why or why not?
+    Little Star. Why or why not? Explain answers.
 
 2.  **Guided practice: Setting up music and variables (10 mins)** — Direct
     students to open their computers to wipple.org and create a new playground.
@@ -103,8 +103,9 @@ standards: 6-8.CT.b.3, 9-12.CT.a.1
     the class and explain their process.
 
 5.  **Exit ticket (3 mins)** — Have students click Print to save a PDF of their
-    code, upload the PDF, and answer the questions in the slideshow on their
-    own. You may use a Google Form or other online survey.
+    code, and save their song as an audio file. Students upload both files and
+    answer the questions in the slideshow on their own. You may use a Google
+    Form or other online survey.
 
 ---
 
@@ -113,6 +114,9 @@ standards: 6-8.CT.b.3, 9-12.CT.a.1
 -   Before this lesson, invite a student (or the teacher) to bring an instrument
     they play, and allow them to perform after watching Twinkle Twinkle Little
     Star. Have students complete the same pattern-recognition exercise.
+
+-   Explore using the `together` command to play across multiple instruments at
+    the same time.
 
 -   If students finish early, they can add additional instruments and make their
     composition longer.
@@ -201,6 +205,6 @@ repeat (sides times) {
     reduce repetition, but `repeat` always runs the code in the same order.
     Variables let you mix up the order in any way you want.
 
--   **What about your song are you most proud of?**
+-   **What about your song are you most proud of, and why?**
 
     Answers will vary!
